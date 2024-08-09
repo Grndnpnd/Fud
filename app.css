@@ -34,7 +34,11 @@ a:hover {
     text-align: center;
     padding-top: 0em;
     border-bottom: 4px solid #FF00FF;
-    position: relative;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    background-color: black; 
+    z-index: 1000; 
 }
 
 #fud-title {
@@ -53,16 +57,13 @@ a:hover {
 
 #menu {
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 272px; /* Adjusted to be below the header */
-    left: 8px;
+    justify-content: center; /* Centers the menu items */
+    position: relative;
+    width: 100%;
     background: #000000;
     border: 2px solid #FF00FF;
     padding: 10px;
     z-index: 1000;
-    max-height: calc(100vh - 80px); 
-    overflow-y: auto;
 }
 
 .menu-item {
@@ -129,15 +130,16 @@ img {
 /* Visitor Counter */
 #visitor-counter {
     position: absolute;
-    top: 80px;
+    top: 120px;
     right: 20px;
     z-index: 1000;
+    padding-bottom: 5px;
 }
 
 /* Play/Pause Button */
 #audio-control {
     position: absolute;
-    top: 140px;
+    top: 60px;
     right: 20px;
     z-index: 1000;
     padding: 10px;
@@ -146,6 +148,7 @@ img {
     border: 2px solid #FF00FF;
     border-radius: 5px;
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
 /* Marquee */
@@ -167,11 +170,11 @@ img {
     }
 
     #visitor-counter {
-        top: 100px;
+        top: 50px;
     }
 
     #audio-control {
-        top: 160px;
+        top: 250px;
     }
 
     #menu {
