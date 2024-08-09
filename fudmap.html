@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="FUDmap">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUDmap</title>
+    <link rel="icon" href="tab.png">
+    <link rel="stylesheet" href="app.css">
+    <style>
+        
+        img {
+            border: none; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <marquee behavior="scroll" direction="left" scrollamount="10" id="marquee">FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD</marquee>
+
+        <button id="audio-control" onclick="toggleAudio()">Play Audio</button>
+        <h1 id="fud-title">FUDMAP</h1>
+        <div id="menu">
+            <div class="menu-item"><a href="index.html">Home</a></div>
+            <div class="menu-item"><a href="disclaimer.html">Disclaimer</a></div>
+            <div class="menu-item"><a href="about.html">About</a></div>
+        </div>
+    </div>
+
+    <div id="content" style="text-align: center; position: relative;">
+        <div style="position: absolute; top: 10px; width: 100%;">
+        </div>
+        <img src="temp/fudshroom.png" alt="FUDshroom" style="max-width: 80%; height: auto; margin-top: 100px; border: none;">
+    </div>
+
+    <div id="footer">
+        <marquee behavior="scroll" direction="right" scrollamount="10" id="marquee">FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD • FUD</marquee>
+    </div>
+
+    <script>
+        const backgroundAudio = document.getElementById("background-audio");
+
+        function toggleAudio() {
+            if (backgroundAudio.paused) {
+                backgroundAudio.play();
+                document.getElementById("audio-control").textContent = "Pause Audio";
+            } else {
+                backgroundAudio.pause();
+                document.getElementById("audio-control").textContent = "Play Audio";
+            }
+        }
+
+        // Flashing text animation
+        const css = `
+            @keyframes flash {
+                0% { opacity: 1; }
+                50% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+        `;
+        const style = document.createElement('style');
+        style.appendChild(document.createTextNode(css));
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="FUD The Chain - Disclaimer">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <link rel="icon" href="tab.png">
+    <link rel="stylesheet" href="app.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+                        linear-gradient(-45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+            background-size: 20px 20px;
+            color: #00FF00;
+            font-family: Alpharush, sans-serif;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .content-box {
+            width: 80%;
+            max-width: 800px;
+            height: 70%;
+            background: #111;
+            border: 4px solid #FF00FF;
+            padding: 10px;
+            overflow-y: scroll;
+            margin: 20px 0;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        h1 {
+            font-size: 150px; 
+            text-shadow: 2px 2px 4px #FF00FF;
+            animation: blink-fud 1s infinite;
+            margin: 0;
+        }
+        #fudshroom {
+            width: 150px; 
+            margin-bottom: 0px;
+            border: none;
+        }
+        @keyframes blink-fud {
+            0% { color: #FFFFFF; }
+            50% { color: #000000; }
+            100% { color: #FFFFFF; }
+        }
+        #menu {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 20px;
+            left: 8px;
+            background: #000000;
+            border: 2px solid #FF00FF;
+            padding: 10px;
+            z-index: 1000;
+            max-height: calc(100vh - 80px);
+            overflow-y: auto;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        .menu-item a {
+            display: block;
+            padding: 10px;
+            background: linear-gradient(to bottom, #e6e6e6 0%, #999999 100%);
+            border: 2px solid #333333;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            color: #000000;
+            animation: blink 1s infinite;
+        }
+        .menu-item a:hover {
+            background: #cccccc;
+        }
+        @keyframes blink {
+            0% { color: #00FF00; }
+            50% { color: #FF0000; }
+            100% { color: #00FF00; }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div class="menu-item"><a href="index.html">Home</a></div>
+        <div class="menu-item"><a href="disclaimer.html">Disclaimer</a></div>
+        <div class="menu-item"><a href="fudmap.html">FUDmap</a></div>
+    </div>
+    <img id="fudshroom" src="temp/FudShroom.png" alt="FudShroom">
+    <h1>About</h1>
+    <div class="content-box">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, velit ut venenatis facilisis, elit nisi cursus augue, nec faucibus purus nulla eget ex. Praesent malesuada felis at sapien suscipit, a interdum nulla tempus.
+
+        </p>
+    </div>
+</body>
+</html>

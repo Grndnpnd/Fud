@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="FUD The Chain - Age Verification">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+    <link rel="icon" href="tab.png">
+    <link rel="stylesheet" href="app.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #000;
+            color: #00FF00;
+            font-family: Alpharush, sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        .button {
+            padding: 20px 40px;
+            margin: 20px;
+            font-size: 30px;
+            color: #000;
+            background-color: #00FF00;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #FF00FF;
+            color: #FFF;
+        }
+        #age-question {
+            font-size: 50px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px #FF00FF;
+            animation: blink-fud 1s infinite;
+        }
+        @keyframes blink-fud {
+            0% { color: #FFFFFF; }
+            50% { color: #000000; }
+            100% { color: #FFFFFF; }
+        }
+        #fud-image {
+            width: 300px;
+            margin-bottom: 20px;
+            border: none; /* Remove the border */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="fud-image" src="temp/FudShroom.png" alt="Fud Shroom">
+        <h1 id="age-question">Are you of legal Fudding age?</h1>
+        <button class="button" onclick="verifyAge(true)">Yes</button>
+        <button class="button" onclick="verifyAge(false)">No</button>
+    </div>
+    <script>
+        function verifyAge(isOfAge) {
+            if (isOfAge) {
+                window.location.href = "index.html";  // Main page
+            } else {
+                window.location.href = "https://www.disney.com";
+            }
+        }
+    </script>
+</body>
+</html>
