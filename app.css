@@ -55,7 +55,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 272px; /* Adjusted to be below the header */
+    bottom: 10px; /* Adjusted to be at the bottom of the page on mobile */
     left: 8px;
     background: #000000;
     border: 2px solid #FF00FF;
@@ -158,6 +158,22 @@ img {
 
 /* media queries: */
 @media screen and (max-width: 420px) {
+    #visitor-counter {
+        display: none; 
+    }
+
+    #menu {
+        bottom: 10px; 
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: none; 
+    }
+
+    .image img {
+        width: 100%; 
+    }
+
     p {
         font-size: 0.7em;
     }
