@@ -56,6 +56,7 @@ a:hover {
     top: 272px;
     left: 8px;
     background: #000000;
+    border: 2px solid #FF00FF;
     padding: 10px;
     z-index: 1000;
     max-height: calc(100vh - 80px);
@@ -162,8 +163,10 @@ img {
         right: 0;
         width: 100%;
         justify-content: space-between;
-        background: transparent;
-        padding: 0;
+        background: #000000;
+        border: 2px solid #FF00FF;
+        padding: 10px;
+        z-index: 1000;
     }
 
     .menu-item {
@@ -174,8 +177,10 @@ img {
     .menu-item a {
         font-size: 25px;
         padding: 5px;
-        background: transparent; /* Remove background for a cleaner look */
-        border: none; /* Remove border for mobile */
+        background: linear-gradient(to bottom, #e6e6e6 0%, #999999 100%);
+        border: 2px solid #333333;
+        border-radius: 5px;
+        text-align: center;
     }
 
     .image img {
@@ -200,8 +205,10 @@ img {
         right: 0;
         width: 100%;
         justify-content: space-between;
-        background: transparent;
-        padding: 0;
+        background: #000000;
+        border: 2px solid #FF00FF;
+        padding: 10px;
+        z-index: 1000;
     }
 
     .menu-item {
@@ -212,8 +219,10 @@ img {
     .menu-item a {
         font-size: 25px;
         padding: 5px;
-        background: transparent; /* Remove background for a cleaner look */
-        border: none; /* Remove border for mobile */
+        background: linear-gradient(to bottom, #e6e6e6 0%, #999999 100%);
+        border: 2px solid #333333;
+        border-radius: 5px;
+        text-align: center;
     }
 
     .image img {
