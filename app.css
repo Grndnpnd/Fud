@@ -162,23 +162,23 @@ img {
         left: 0;
         right: 0;
         width: 100%;
-        justify-content: space-around;
-        max-height: none;
-        background: #000000; /* Background color for the menu */
-        padding: 5px 0; /* Reduce padding */
+        justify-content: space-between;
+        background: transparent;
+        padding: 0; 
+    }
+
+    .menu-item {
+        flex: 1;
+        margin: 0;
     }
 
     .menu-item a {
-        font-size: 25px; /* Reduce font size */
-        padding: 5px; /* Reduce padding */
+        font-size: 25px;
+        padding: 5px;
     }
 
     .image img {
         width: 95%;
-    }
-
-    p {
-        font-size: 0.7em;
     }
 
     #audio-control {
@@ -198,15 +198,19 @@ img {
         left: 0;
         right: 0;
         width: 100%;
-        justify-content: space-around;
-        max-height: none;
-        background: #000000; /* Background color for the menu */
-        padding: 5px 0; /* Reduce padding */
+        justify-content: space-between;
+        background: transparent;
+        padding: 0;
+    }
+
+    .menu-item {
+        flex: 1;
+        margin: 0;
     }
 
     .menu-item a {
-        font-size: 25px; /* Reduce font size */
-        padding: 5px; /* Reduce padding */
+        font-size: 25px;
+        padding: 5px;
     }
 
     .image img {
