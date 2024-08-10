@@ -167,6 +167,7 @@ img {
         padding: 10px;
         border: 2px solid #FF00FF;
         background: #000000;
+        z-index: 1000;
     }
 
     .menu-item {
