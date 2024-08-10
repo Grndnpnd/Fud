@@ -102,17 +102,17 @@
 
         @media screen and (orientation: landscape) {
             #menu {
-                flex-direction: row;
                 position: fixed;
                 bottom: 0;
+                top: auto;
                 left: 0;
                 right: 0;
-                width: 100%;
-                justify-content: space-between;
-                background: #000000;
-                border: 2px solid #FF00FF;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
                 padding: 10px;
-                z-index: 1000;
+                border: 2px solid #FF00FF;
+                background: #000000;
             }
 
             .menu-item {
