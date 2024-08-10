@@ -4,7 +4,7 @@
     <meta name="description" content="FUD The Chain - Disclaimer">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Disclaimer</title>
     <link rel="icon" href="tab.png">
     <link rel="stylesheet" href="app.css">
@@ -21,9 +21,12 @@
             font-family: Alpharush, sans-serif;
             text-align: center;
             padding-top: 5px;
+            margin: 0;
+            overflow-x: hidden;
         }
+
         .content-box {
-            width: 80%;
+            width: 90%;
             max-width: 800px;
             height: 70%;
             background: #111;
@@ -34,22 +37,27 @@
             text-align: left;
             color: #FFFFFF;
         }
+
         h1 {
-            font-size: 150px; 
+            font-size: 10vw;
             text-shadow: 2px 2px 4px #FF00FF;
             animation: blink-fud 1s infinite;
             margin: 0;
         }
+
         #fudshroom {
-            width: 150px; 
+            width: 25vw;
+            max-width: 150px;
             margin-bottom: 0px;
             border: none;
         }
+
         @keyframes blink-fud {
             0% { color: #FFFFFF; }
             50% { color: #000000; }
             100% { color: #FFFFFF; }
         }
+
         #menu {
             display: flex;
             flex-direction: column;
@@ -63,9 +71,11 @@
             max-height: calc(100vh - 80px);
             overflow-y: auto;
         }
+
         .menu-item {
             margin-bottom: 10px;
         }
+
         .menu-item a {
             display: block;
             padding: 10px;
@@ -78,9 +88,11 @@
             color: #000000;
             animation: blink 1s infinite;
         }
+
         .menu-item a:hover {
             background: #cccccc;
         }
+
         @keyframes blink {
             0% { color: #00FF00; }
             50% { color: #FF0000; }
@@ -109,12 +121,18 @@
             }
 
             .menu-item a {
-                font-size: 25px;
+                font-size: 20px;
                 padding: 5px;
                 background: linear-gradient(to bottom, #e6e6e6 0%, #999999 100%);
                 border: 2px solid #333333;
                 border-radius: 5px;
                 text-align: center;
+            }
+
+            .content-box {
+                width: 95%;
+                height: 60%;
+                font-size: 0.9em;
             }
         }
 
@@ -139,12 +157,26 @@
             }
 
             .menu-item a {
-                font-size: 25px;
+                font-size: 20px;
                 padding: 5px;
                 background: linear-gradient(to bottom, #e6e6e6 0%, #999999 100%);
                 border: 2px solid #333333;
                 border-radius: 5px;
                 text-align: center;
+            }
+
+            h1 {
+                font-size: 8vw;
+            }
+
+            .content-box {
+                width: 95%;
+                height: 60%;
+                font-size: 0.9em;
+            }
+
+            #fudshroom {
+                width: 20vw;
             }
         }
     </style>
