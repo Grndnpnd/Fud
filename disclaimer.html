@@ -98,6 +98,52 @@
             50% { color: #FF0000; }
             100% { color: #00FF00; }
         }
+        
+        @media screen and (orientation: landscape) {
+            #menu {
+                position: fixed;
+                bottom: 0;
+                top: auto;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 10px;
+                border: 2px solid #FF00FF;
+                background: #000000;
+            }
+
+            .menu-item {
+                flex: 1;
+                margin: 0;
+            }
+
+            .menu-item a {
+                font-size: 20px;
+                padding: 5px;
+                background: linear-gradient(to bottom, #e6e6e6 0%, #999999 100%);
+                border: 2px solid #333333;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 8vw;
+            }
+
+            .content-box {
+                width: 70%;
+                height: 60vh;
+                min-height: 400px;
+                overflow-y: scroll;
+                font-size: 1em;
+            }
+
+            #fudshroom {
+                width: 20vw;
+            }
+        }
 
         @media screen and (max-width: 420px) {
             #menu {
