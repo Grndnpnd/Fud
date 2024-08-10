@@ -98,8 +98,26 @@
     <h1>About</h1>
     <div class="content-box">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis, velit ut venenatis facilisis, elit nisi cursus augue, nec faucibus purus nulla eget ex. Praesent malesuada felis at sapien suscipit, a interdum nulla tempus.
-
+            <strong>• Inscribed on 884 legacy sats, with each output being 884 sats</strong><br>
+            We split 884 legacy sats into 884 separate UTXOs, where each UTXO is a single legacy sat followed by 883 common sats. This takes a lot of careful planning to manipulate the sats.
+        </p>
+        <p>
+            <strong>• Inscription IDs start and end with 884</strong><br>
+            To achieve this, we create the reveal transaction over and over again with different change addresses and nLockTime values until it has a txid that starts and ends with 884. Only then do we broadcast the transaction.
+        </p>
+        <p>
+            <strong>• Have the same inscription ID for every inscription other than the "i..." ending</strong><br>
+            We wanted piece #1 to have ending "i1", and so on. This caused 2 problems:
+        </p>
+        <p>
+            1. The first inscription created by any reveal tx is i0. We don't want i0. We want i1 through i884. So we added a dummy blank first inscription and omitted it from the parent/child relationship. So the FUD shroom only has 884 children (i1 - i884) and not i0.
+        </p>
+        <p>
+            2. Including all the inscriptions in a single batch caused the reveal tx to have a vsize of a little over 220 kB. The maximum vsize for a standard tx is 100 kB, so we had to use the services of a mining pool to get it included in a block.
+        </p>
+        <p>
+            <strong>• Use fee 884 SATs per inscription</strong><br>
+            Sites like ordinals.com and ord.io display the "fee" it cost to create an inscription. This is the total fee of just the reveal transaction divided by the number of inscriptions created by that reveal transaction. Ord usually sets the fee by multiplying the reveal tx vsize by the requested fee rate. But we didn't care about the fee rate - we cared about the fee amount. So we set the fee amount to be 884 * 884, so the fee per inscription would be 884.
         </p>
     </div>
 </body>
